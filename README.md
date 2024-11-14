@@ -30,8 +30,8 @@ Essas ferramentas foram escolhidas pela sua popularidade e eficiência no desenv
 1. Clone o repositório: 
 
 ```bash
-git clone https://github.com/seu-usuario/pokedex.git
-cd pokedex
+git clone https://github.com/endriusssantos/projeto-pokedex
+cd projeto-pokedex
 ```
 
 2. Instale as dependências:
