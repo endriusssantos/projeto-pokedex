@@ -30,7 +30,7 @@ Essas ferramentas foram escolhidas pela sua popularidade e eficiência no desenv
 1. Clone o repositório: 
 
 ```bash
-git clone [https://github.com/seu-usuario/pokedex.git](https://github.com/endriusssantos/projeto-pokedex)
+git clone https://github.com/endriusssantos/projeto-pokedex
 cd pokedex
 ```
 
