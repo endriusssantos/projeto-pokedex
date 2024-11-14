@@ -31,7 +31,7 @@ Essas ferramentas foram escolhidas pela sua popularidade e eficiência no desenv
 
 ```bash
 git clone https://github.com/endriusssantos/projeto-pokedex
-cd pokedex
+cd projeto-pokedex
 ```
 
 2. Instale as dependências:
