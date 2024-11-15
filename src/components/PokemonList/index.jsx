@@ -131,6 +131,15 @@ const getTypeColorContainer = (type) => {
     case 'electric': return '#FAE078';
     case 'ground': return '#EBD69D';
     case 'fairy': return '#F4BDC9';
+    case 'flying': return '#C8BDF4';
+    case 'fighting': return '#D98282';
+    case 'psychic': return '#FA92B2';
+    case 'rock': return '#D1C17D';
+    case 'ghost': return '#A292BC';
+    case 'ice': return '#C2E8E8';
+    case 'dragon': return '#B3A2F4';
+    case 'dark': return '#A8A878';
+    case 'steel': return '#D1D1E0';
     default: return '#D3D3D3';
   }
 };
@@ -146,6 +155,15 @@ const getTypeColorName = (type) => {
     case 'electric': return '#F8D030';
     case 'ground': return '#E0C068';
     case 'fairy': return '#EE99AC';
+    case 'flying': return '#A890F0';
+    case 'fighting': return '#C03028';
+    case 'psychic': return '#F85888';
+    case 'rock': return '#B8A038';
+    case 'ghost': return '#705898';
+    case 'ice': return '#98D8D8';
+    case 'dragon': return '#7038F8';
+    case 'dark': return '#705848';
+    case 'steel': return '#B8B8D0';
     default: return '#D3D3D3';
   }
 };
