@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -6,6 +6,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { PokemonListContext } from '../../contexts/PokemonListContext';
 import lightIcon from '../../images/moon.png';
 import darkIcon from '../../images/sun.png';
+import LogoPokedex from '../../images/logo-pokemon.png';
 
 function PokemonList() {
   const { pokemonList, setPokemonList, offset, setOffset, selectedType, setSelectedType } = useContext(PokemonListContext);
@@ -79,7 +80,7 @@ function PokemonList() {
           <ThemeImage src={isDark ? darkIcon : lightIcon} alt="theme" />
         </button>
         <a href="/">
-          <Image src="../src/images/logo-pokemon.png" alt="logo" />
+          <Image src={LogoPokedex} alt="logo"/>
         </a>
         <Select onChange={handleTypeChange} value={selectedType}>
           <option value="all">All</option>

@@ -6,6 +6,9 @@ import { Header, Image, ThemeImage } from '../PokemonList';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import lightIcon from '../../images/moon.png';
 import darkIcon from '../../images/sun.png';
+import LogoPokedex from '../../images/logo-pokemon.png';
+import Arrow from '../../images/arrow.png';
+import ArrowMobile from '../../images/arrow-mobile.png';
 
 function PokemonDetails() {
   const { name } = useParams();
@@ -58,15 +61,15 @@ function PokemonDetails() {
           <ThemeImage src={isDark ? darkIcon : lightIcon} alt="theme" />
         </button>
         <a href="/">
-          <Image src="../src/images/logo-pokemon.png" alt="logo" />
+          <Image src={LogoPokedex} alt="logo" />
         </a>
       </Header>
       <DetailsCard color={primaryTypeColor}>
         <ButtonBack onClick={() => navigate(-1)}>
           <picture>
-            <source media="(max-width: 768px)" srcSet="../src/images/arrow-mobile.png" />
-            <source media="(min-width: 769px)" srcSet="../src/images/arrow.png" />
-            <img src="../src/images/arrow.png" alt="arrow" />
+            <source media="(max-width: 768px)" srcSet={ArrowMobile} />
+            <source media="(min-width: 769px)" srcSet={Arrow} />
+            <img src={Arrow} alt="arrow" />
           </picture>
         </ButtonBack>
         <PokemonName>{pokemonDetails.name}</PokemonName>
